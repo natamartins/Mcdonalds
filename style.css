@@ -1,0 +1,491 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*utilitarias*/
+.style-mudaCor a:hover {
+  color: #000;
+}
+
+.btnHover {
+  transition: all 1s;
+}
+
+.btnHover:hover {
+  background: #333;
+  color: #fff;
+}
+
+/*---------------*/
+.content-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.nav-img-logo img {
+  width: 120px;
+  margin-top: -18px;
+}
+
+.nav-list-01 {
+  width: 1600px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.nav-list-01 li a {
+  color: #606060;
+}
+
+.nav-list-01 ul,
+.nav-list-02 ul {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-list-02-link li a {
+  font-size: 1.1rem;
+  color: #000;
+  padding-bottom: 30px;
+  transition: 0.3s;
+}
+
+.nav-list-02-link li a:hover {
+  border-bottom: 8px solid #ffbc0d;
+}
+
+.nav-list-link-yello {
+  background: #ffbc0d;
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+
+.nav-list-link-yello {
+  color: #000;
+}
+
+@media (max-width: 1000px) {
+  body {
+    max-width: 100%;
+  }
+
+  .content-nav {
+    display: block;
+  }
+
+  .nav-list-01 {
+    display: block;
+    width: 100%;
+  }
+
+  .link-nav-01 {
+    margin-bottom: 25px;
+  }
+
+  .nav-list-link-yello {
+    background: none;
+  }
+
+  .nav-list-01 ul,
+  .nav-list-02 ul {
+    display: grid;
+    gap: 40px;
+  }
+
+  .nav-list-02-link li a {
+    padding-bottom: 5px;
+  }
+
+  .content-propaganda-01-text {
+    max-width: 505px;
+  }
+}
+
+/*menu mobile*/
+
+.Menu {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .Menu {
+    display: block;
+  }
+
+  .content-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .content-nav-lista {
+    display: none;
+  }
+}
+
+/*section Conteudo Propagandas-01*/
+.content-propaganda-01 {
+  width: 100%;
+  height: 1000px;
+  background: url(./img/img-home/175_10_1_banner_geral_580x250px_luisa_3ffc882b0f.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.content-propaganda-01-text {
+  position: absolute;
+  bottom: 80px;
+  left: 250px;
+}
+
+.content-propaganda-01-text h1 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.content-propaganda-01-text p {
+  color: #f1f1f1;
+  margin-bottom: 20px;
+}
+
+.content-propaganda-01-text a {
+  background: #ffbc0d;
+  color: #333;
+  display: inline-block;
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+
+@media (max-width: 1000px) {
+  .content-propaganda-01-text {
+    text-align: center;
+    left: 20px;
+  }
+  .content-propaganda-01-text h1 {
+    font-size: 2rem;
+  }
+  .content-propaganda-02-box {
+    margin: auto;
+  }
+}
+/*Main propaganda-02*/
+
+.content-propaganda-02 {
+  width: 1700px;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  border-radius: 10px;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+.content-propaganda-02-box {
+  height: 590px;
+  border-radius: 9px;
+  text-align: center;
+  box-shadow: 0px 2px 5px #c2c2c2;
+}
+
+.widht-img-propaganda-02-box img {
+  height: 380px;
+}
+
+.propaganda-02-img img {
+  width: 100%;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.propaganda-02-text {
+  padding: 20px 10px;
+}
+
+.propaganda-02-text h2 {
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.propaganda-02-text p {
+  margin-bottom: 30px;
+}
+.propaganda-02-text a {
+  background: #ffbc0d;
+  color: #333;
+  display: inline-block;
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+
+@media (max-width: 1000px) {
+  .content-propaganda-02 {
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 40px;
+  }
+  .content-propaganda-02-box {
+    height: 550px;
+    width: 500px;
+  }
+  .propaganda-02-text h2 {
+    margin-top: 80px;
+  }
+}
+/*Propaganda-03*/
+.content-propaganda-03-box {
+  max-width: 1700px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 99px;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+.content-propaganda-03 {
+  width: 500px;
+  height: 500px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px #c2c2c2;
+}
+
+.content-propaganda-03-img {
+  margin-bottom: 20px;
+}
+
+.content-propaganda-03-img img {
+  width: 100%;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.content-propaganda-03-text h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.content-propaganda-03-text p {
+  margin-bottom: 70px;
+}
+
+.content-propaganda-03-text a {
+  background: #ffbc0d;
+  color: #333;
+  display: inline-block;
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+
+@media (max-width: 1000px) {
+  .content-propaganda-03-box {
+    overflow-x: scroll;
+    padding: 20px;
+  }
+  .content-propaganda-03 {
+    width: 420px;
+    margin-bottom: 30px;
+    height: 464px;
+  }
+}
+
+/*Pre-footer*/
+#pre-footer {
+  background: #ffbc0d;
+}
+
+svg {
+  margin-left: 356px;
+  position: absolute;
+  margin-top: -201px;
+}
+
+.pre-footer {
+  width: 1700px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: auto;
+  padding: 30px 0px;
+  margin-bottom: 200px;
+}
+
+.pre-footer-img img {
+  width: 120px;
+}
+
+.pre-footer-content {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pre-footer-content a {
+  padding: 15px 20px;
+  border-radius: 5px;
+  background: #fff;
+  color: #000;
+  display: inline-block;
+}
+
+.pre-footer-text h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.pre-footer-text p {
+  max-width: 1000px;
+}
+
+@media (max-width: 1000px) {
+  .pre-footer {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+  }
+  #pre-footer {
+    display: grid;
+  }
+  .pre-footer-content {
+    display: block;
+  }
+  .pre-footer-text p {
+    margin-bottom: 30px;
+  }
+  svg {
+    margin-left: 10px;
+    position: absolute;
+    margin-top: -8px;
+    width: 800px;
+  }
+}
+/*Footer*/
+.footer-content-listas {
+  width: 1700px;
+  display: flex;
+  gap: 90px;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+.footer-content-listas ul li a {
+  color: #606060;
+}
+
+.footer-lista-01 ul li,
+.footer-lista-02 ul li,
+.footer-lista-03 ul li,
+.footer-lista-04 ul li {
+  margin-bottom: 20px;
+}
+
+.primeiro-li {
+  padding-bottom: 25px;
+}
+
+.primeiro-li a {
+  color: #000;
+}
+
+.footer-icons {
+  max-width: 1700px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #333;
+}
+
+.redes-socias {
+  display: flex;
+  gap: 30px;
+}
+
+.redes-socias li img {
+  width: 25px;
+}
+
+.redes-apps {
+  display: flex;
+  gap: 20px;
+}
+
+.redes-apps li img {
+  width: 100px;
+}
+
+.footer-icons-2 {
+  max-width: 1700px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-bottom: 30px;
+}
+
+.redes-apps-02 {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.redes-socias-02 {
+  display: flex;
+  gap: 30px;
+}
+
+.redes-socias-02 li a {
+  color: #606060;
+}
+
+.redes-apps-02 img {
+  width: 60px;
+}
+
+@media (max-width: 1000px) {
+  .footer-content-listas {
+    display: grid;
+    text-align: center;
+    padding-top: 90px;
+    gap: 30px;
+  }
+
+  .footer-icons,
+  .footer-icons-2 {
+    display: grid;
+    gap: 30px;
+    border-bottom: none;
+    justify-content: center;
+  }
+  .footer-content-listas {
+    width: 100%;
+  }
+}
